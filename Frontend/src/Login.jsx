@@ -13,7 +13,7 @@ function Login() {
   // Fetch protected data after login
   const fetchUserData = async (token) => {
     try {
-      const res = await axios.get("http://localhost:5000/api/users/profile", {
+      const res = await axios.get("https://my-react-app-main-llmi.vercel.app/api/users/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -52,7 +52,7 @@ const handleSubmit = async (e) => {
 
   try {
     const { data } = await axios.post(
-      "http://localhost:5000/api/users/login",
+      "https://my-react-app-main-llmi.vercel.app/api/users/login",
       { email, password }
     );
 

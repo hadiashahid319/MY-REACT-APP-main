@@ -8,7 +8,7 @@ function Cart() {
     useContext(ItemsContext);
   const navigate = useNavigate();
 
-  const BASE_URL = "http://localhost:5000/upload/mirrors/";
+  const BASE_URL = "https://my-react-app-main-llmi.vercel.app/upload/mirrors/";
 
   // GRAND TOTAL
   const grandTotal = cart.reduce(

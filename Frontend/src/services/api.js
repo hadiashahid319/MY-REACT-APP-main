@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000"; // your backend URL
-const url = "http://localhost:5000/items";
-const URL = "http://localhost:5000/api";
-const uRl="http://localhost:5000";
-const BASE_URL = "http://localhost:5000/api"; 
+const API_URL = "https://my-react-app-main-llmi.vercel.app/"; // your backend URL
+const url = "https://my-react-app-main-llmi.vercel.app/items";
+const URL = "https://my-react-app-main-llmi.vercel.app/api";
+const uRl="https://my-react-app-main-llmi.vercel.app/";
+const BASE_URL = "https://my-react-app-main-llmi.vercel.app/api"; 
 
 
 export const registerUser = async (data) => axios.post(`${URL}/register`, data);
@@ -18,7 +18,7 @@ export const getUsers = async () => {
 
 //ADMIN
 export const addItem = async (itemData) => {
-  return await axios.post("http://localhost:5000/api/items", itemData);
+  return await axios.post("https://my-react-app-main-llmi.vercel.app/api/items", itemData);
 };
 
 
@@ -48,10 +48,10 @@ export const viewuser = async () => {
 };
 
 export const createPaymentIntentAPI = (amount) =>
-  axios.post("http://localhost:5000/api/payments/create-payment-intent", { amount });
+  axios.post("https://my-react-app-main-llmi.vercel.app/api/payments/create-payment-intent", { amount });
 
 export const storePaymentAPI = (paymentData) =>
-  axios.post("http://localhost:5000/api/payments/store-payment", paymentData);
+  axios.post("https://my-react-app-main-llmi.vercel.app/api/payments/store-payment", paymentData);
 
 
 const token = localStorage.getItem("token");

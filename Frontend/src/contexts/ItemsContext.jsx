@@ -13,7 +13,7 @@ export function ItemsProvider({ children }) {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/items");
+        const res = await axios.get("https://my-react-app-main-llmi.vercel.app/api/items");
         setItems(res.data);
       } catch (err) {
         console.log("Fetch Error:", err);

@@ -30,7 +30,7 @@ const onSubmit = async (data) => {
     if (file) formData.append("image", file);
 
     const res = await axios.post(
-      "http://localhost:5000/api/items",
+      "https://my-react-app-main-llmi.vercel.app/api/items",
       formData,
       { headers: { "Content-Type": "multipart/form-data" } }
     );

@@ -5,7 +5,7 @@ import styles from "./CheckoutPage.module.css";
 const CheckoutPage = () => {
   const { cart } = useContext(ItemsContext);
 
-  const BASE_URL = "http://localhost:5000/upload/mirrors/";
+  const BASE_URL = "https://my-react-app-main-llmi.vercel.app/upload/mirrors/";
 
   // ------------ TOTAL CALCULATION ----------------
   const subtotal = cart.reduce((sum, item) => sum + Number(item.price), 0);

@@ -31,7 +31,7 @@ function RegistrationPage() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://my-react-app-main-llmi.vercel.app/api/users/register",
         formData
       );
 

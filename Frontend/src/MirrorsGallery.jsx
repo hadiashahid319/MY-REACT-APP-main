@@ -10,7 +10,7 @@ function MirrorsGallery() {
 
   const navigate = useNavigate();  // ⭐ navigation
 
-  const BASE_URL = "http://localhost:5000/upload/mirrors/";
+  const BASE_URL = "https://my-react-app-main-llmi.vercel.app/upload/mirrors/";
 
   useEffect(() => {
     const filtered = items.filter(
