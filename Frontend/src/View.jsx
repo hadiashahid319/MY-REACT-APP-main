@@ -1,4 +1,4 @@
-import ABOUT from "./assets/HOM/decor.jpg";
+import ABOUT from "./assets/Hom/decor.jpg";
 
 function View() {
   return (
