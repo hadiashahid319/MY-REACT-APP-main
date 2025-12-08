@@ -31,7 +31,7 @@ function FramesGallery() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
-        <h1 className={styles.heading}>🖼️ Frames Gallery</h1>
+        <h1 className={styles.heading}>ALL Frames Gallery</h1>
         <p className={styles.filterLabel}>Showing all Frames</p>
       </div>
 
