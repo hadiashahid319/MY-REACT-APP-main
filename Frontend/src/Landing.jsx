@@ -7,7 +7,7 @@ import About from "./Banner";
 import MostSaledItem from "./MostSaledItem";
 import Banner from "./Banner";
 import Navbar from "./Bar";
-import ProductDetails from "./Productdetails";
+
 import RegistrationPage from "./Registrationpage";
 import Login from "./Login";
 import CandlesGallery from "./CandlesGallery";
