@@ -1,0 +1,51 @@
+.gallerySection {
+  background-color: #f8f4ef;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #291c0e;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #a78d78;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #beb5a9;
+  border-radius: 5px;
+}
+
+.name {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #6e473b;
+  font-size: 1.1rem;
+  font-family: 'Merriweather', serif;
+}
+.linkWrapper {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.linkWrapper:hover .card {
+  transform: translateY(-5px);
+}

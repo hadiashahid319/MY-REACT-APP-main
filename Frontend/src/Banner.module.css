@@ -1,0 +1,46 @@
+.bannerSection {
+  background-color: #E1D4C2;
+  padding: 2rem 0;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-weight: bold;
+  color: #291C0E;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: 'Merriweather', serif;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  line-height: 1.6;
+  color: #6E473B;
+  margin-bottom: 1rem;
+}
+
+.shopBtn {
+  background-color: #A78D78;
+  color: white;
+  border-radius: 30px;
+  border: 3px solid #A78D78;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.shopBtn:hover {
+  background-color: transparent;
+  color: #A78D78;
+}
+
+.bannerImage {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid #E1D4C2;
+  border-radius: 5px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}

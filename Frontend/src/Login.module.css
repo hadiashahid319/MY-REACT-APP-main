@@ -1,0 +1,87 @@
+/* Full screen container */
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f2eb; /* Light beige background */
+  padding: 20px;
+}
+
+/* Login box */
+.loginBox {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Left form section */
+.formSection {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  background: white;
+}
+
+/* Right image section */
+.imageSection {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Logo style */
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #a87952;
+}
+
+/* Sub heading */
+.subHeading {
+  text-align: center;
+  color: #a87952;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Sign In button */
+.signInBtn {
+  width: 100%;
+  background-color: #a87952;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.signInBtn:hover {
+  background-color: #8a613f;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .loginBox {
+    flex-direction: column;
+    max-width: 95%;
+  }
+
+  .sideImage {
+    border-radius: 0 0 12px 12px;
+    height: 200px;
+  }
+}

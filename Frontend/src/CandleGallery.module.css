@@ -1,0 +1,206 @@
+/* 🔹 Wrapper and Header */
+.wrapper {
+  padding: 2rem;
+  background-color: #faf7f3;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.heading {
+  flex: 1;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #4b3832;
+  letter-spacing: 1px;
+}
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  font-size: 1rem;
+  color: #4b3832;
+  font-weight: 600;
+}
+
+.filterSelect {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #bc8a5f;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #4b3832;
+}
+
+.filterSelect:hover {
+  background-color: #f5e6d3;
+  border-color: #9c6b3b;
+}
+
+/* 🔹 Candles Grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* 🔹 Card Design */
+.card {
+  width: 100%;
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4b3832;
+  margin: 0.5rem 0;
+}
+
+.price {
+  color: #9c6b3b;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.button {
+  padding: 0.6rem 1.4rem;
+  background-color: #bc8a5f;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #9c6b3b;
+}
+
+/* 🔹 Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.closeButton {
+  background: #bc8a5f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeButton:hover {
+  background: #9c6b3b;
+}
+
+/* 🔹 RESPONSIVE MEDIA QUERIES */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .image {
+    height: 240px;
+  }
+
+  .filterContainer {
+    justify-content: center;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 1.5rem;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .filterContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .filterLabel {
+    font-size: 0.95rem;
+  }
+
+  .filterSelect {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .image {
+    height: 220px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}

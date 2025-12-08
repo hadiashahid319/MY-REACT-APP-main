@@ -1,0 +1,115 @@
+/* .messagesContainer {
+  padding: 25px;
+  background-color: #f8f5f2;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  text-align: center;
+  color: #5a3825;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.formBox {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.cardList {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.messageCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  color: #4a2e20;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.messageText {
+  margin: 10px 0;
+  color: #333;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+  font-size: 16px;
+} */
+
+
+.container {
+  padding: 30px;
+  background-color: #f8f5f2;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #5a3825;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  color: #4a2e20;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.message {
+  margin: 10px 0;
+  color: #333;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+  font-size: 16px;
+}

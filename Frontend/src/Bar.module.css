@@ -1,0 +1,203 @@
+/* 🔹 Global font for top bar, nav, dropdown, links */
+* {
+  font-family: serif;
+  font-weight: 500;
+}
+
+/* 🔹 Top Bar Styling */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6E473B;
+  padding: 10px 20px;
+  border-bottom: 2px solid #E1D4C2;
+  flex-wrap: wrap;
+}
+
+/* 🔹 Logo */
+.logoBox {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #E1D4C2;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* 🔹 Title */
+.title {
+  flex-grow: 1;
+  text-align: center;
+  color: black;
+  letter-spacing: 4px;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  margin: 0;
+  padding-left: 19%;
+}
+
+/* 🔹 Right Section */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🔍 Search box */
+.searchBox {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 1px solid #BEB5A9;
+  animation: fadeIn 0.3s ease;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  width: 150px;
+}
+
+/* 🔹 Social Icons */
+.icons i {
+  color: #E1D4C2;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+/* 🔹 Cart Button */
+.cartBtn {
+  background: transparent;
+  border: 1px solid #BEB5A9;
+  color: #E1D4C2;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.cartBtn:hover {
+  background: #E1D4C2;
+  color: #6E473B;
+}
+
+/* 🔹 Auth Links */
+.authLinks {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+}
+
+.authLink {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.authLink:hover {
+  color: #E1D4C2;
+}
+
+.divider {
+  color: #E1D4C2;
+  font-size: 18px;
+  margin: 0 4px;
+}
+
+/* 🔹 Navigation Bar */
+.navBar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: #A78D78;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #291C0E;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navBar a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* 🔹 Dropdown */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  color: black;
+}
+
+.dropdown span {
+  color: black;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #6E473B;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdownContent a {
+  color: #E1D4C2;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {
+  background-color: #A78D78;
+  color: black;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+/* 🔹 Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* 🔹 RESPONSIVE */
+
+/* Tablets ≤ 768px */
+@media (max-width: 768px) {
+  .topBar { flex-direction: column; align-items: center; padding: 10px; }
+  .title { font-size: 1.5rem; }
+  .rightSection { flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .searchBox input { width: 120px; }
+  .navBar { gap: 15px; padding: 8px 0; }
+  .navBar a { font-size: 0.9rem; }
+}
+
+/* Mobile ≤ 480px */
+@media (max-width: 480px) {
+  .logo { width: 45px; height: 45px; }
+  .title { font-size: 1.2rem; letter-spacing: 2px; }
+  .searchBox input { width: 100px; }
+  .authLinks { font-size: 0.85rem; }
+  .navBar { flex-direction: column; gap: 10px; }
+  .navBar a { font-size: 0.85rem; }
+}

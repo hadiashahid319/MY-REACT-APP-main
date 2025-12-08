@@ -1,0 +1,49 @@
+.toccontainer {
+  height: 100vh;
+  background-color: #e8dad0; 
+ 
+  width: 100vw;
+  padding-left: 0%;/* light beige tone */
+}
+
+.toc-content {
+  background-color: #f4eae4;
+  border: 2px solid #bbaea2;
+  border-radius: 8px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.toc-left {
+  background-color: #f4eae4;
+}
+
+.toc-left h2 {
+  letter-spacing: 2px;
+  font-family: "Times New Roman", serif;
+  color: #2f2f2f;
+}
+
+.toc-list span {
+  font-size: 1.1rem;
+  color: #3a3a3a;
+}
+
+.tocright {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/21/15/47/abstract-1846380_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(60%) brightness(90%);
+  border-left: 2px solid #bbaea2;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .toc-content {
+    flex-direction: column;
+  }
+
+  .toc-right {
+    height: 200px;
+  }
+}

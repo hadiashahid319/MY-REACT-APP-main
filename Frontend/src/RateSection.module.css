@@ -1,0 +1,57 @@
+.rateSection {
+  background: linear-gradient(135deg, #fff8e1, #f5f3ec);
+  text-align: center;
+  padding: 60px 20px;
+  border-top: 2px solid #fbf2db;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heading {
+    font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.stars {
+  margin-bottom: 20px;
+}
+
+.starIcon {
+  color: #ffca28;
+  font-size: 1.8rem;
+  margin: 0 5px;
+  transition: transform 0.2s;
+}
+
+.starIcon:hover {
+  transform: scale(1.2);
+}
+
+.rateButton {
+  background-color: #744c1e;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.rateButton:hover {
+  background-color: #f2c232;
+  color: #333;
+}

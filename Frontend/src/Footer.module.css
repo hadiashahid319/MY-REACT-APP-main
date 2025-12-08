@@ -1,0 +1,89 @@
+.footer {
+  background-color: #E1D4C2;
+  color: #2c1b0c;
+  padding-top: 2rem;
+  font-family: 'Merriweather', serif;
+}
+
+/* Brand Section */
+.brandTitle {
+  color: #51310d;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+.brandText {
+  margin-top: 10px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Headings */
+.footerHeading {
+  color: #744c1e;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Footer Links */
+.footerList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerList li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footerList li:hover {
+  color: #51310d;
+  font-weight: 500;
+}
+
+/* Social Icons */
+.socialLinks {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialLinks a {
+  color: #2c1b0c;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.socialLinks a:hover {
+  transform: scale(1.2);
+}
+
+/* Divider */
+.divider {
+  border-color: #51310d;
+  margin-top: 20px;
+}
+
+/* Footer Bottom */
+.copyText {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.brandSpan {
+  color: #51310d;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}

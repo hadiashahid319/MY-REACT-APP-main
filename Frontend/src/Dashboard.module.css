@@ -1,0 +1,128 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dashboardContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent panel */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+/* ====== Sidebar ====== */
+.dashboardSidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #fff, #f1ece5);
+  border-right: 1px solid #e0d6c7;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboardTitle {
+  font-weight: 600;
+  color: #5a4634;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+/* ====== Buttons ====== */
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.dashboardBtn {
+  font-weight: 500;
+  text-align: left;
+  padding: 12px 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboardBtn i {
+  font-size: 18px;
+}
+
+/* Individual Button Themes */
+.create {
+  background-color: #b88746;
+}
+
+.update {
+  background-color: #8d6e63;
+}
+
+.delete {
+  background-color: #d32f2f;
+}
+
+.rating {
+  background-color: #f9a825;
+}
+
+/* Hover Effects */
+.dashboardBtn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+/* ====== Content Area ====== */
+.dashboardContent {
+  flex: 1;
+  padding: 40px;
+  background: #fffdf9;
+  overflow-y: auto;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+/* ====== Scrollbar Style ====== */
+.dashboardContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboardContent::-webkit-scrollbar-thumb {
+  background-color: #d8cbb1;
+  border-radius: 10px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 900px) {
+  .dashboardContainer {
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  .dashboardSidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0d6c7;
+  }
+
+  .dashboardContent {
+    border-radius: 0;
+    padding: 25px;
+  }
+}
