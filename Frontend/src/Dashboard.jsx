@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "./Dashboard.module.css";
-import bgImage from "./assets/Hom/frames/frame5.jpg"; 
+
 
 export default function Dashboard() {
   return (
