@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "./Dashboard.module.css";
-import bgImage from "./assets/Hom/frames/frame5.jpg"; 
+
 
 export default function Dashboard() {
   return (
@@ -13,7 +13,7 @@ export default function Dashboard() {
       <div className={styles.dashboardContainer}>
         {/* Sidebar */}
         <div className={styles.dashboardSidebar}>
-          <h4 className={styles.dashboardTitle}>🏡 Home Décor Panel</h4>
+          <h4 className={styles.dashboardTitle}>🏡 Home Decor Panel</h4>
 
           <div className={styles.buttonGroup}>
             <Link

@@ -21,7 +21,7 @@ function MirrorsGallery() {
 
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.heading}>🪞 Mirrors Gallery</h1>
+      <h1 className={styles.heading}>ALL SELECTED GALLERY</h1>
 
       <div className={styles.container}>
         {mirrors.map((mirror) => (
