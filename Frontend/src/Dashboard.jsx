@@ -13,7 +13,7 @@ export default function Dashboard() {
       <div className={styles.dashboardContainer}>
         {/* Sidebar */}
         <div className={styles.dashboardSidebar}>
-          <h4 className={styles.dashboardTitle}>🏡 Home Decor Panel</h4>
+          <h4 className={styles.dashboardTitle}>Home Decor Panel</h4>
 
           <div className={styles.buttonGroup}>
             <Link
