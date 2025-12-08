@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./RegistrationPage.module.css";
-import bgImage from "./assets/HOM/login.jpg";
+import bgImage from "./assets/Hom/login.jpg";
 import axios from "axios";
 
 function RegistrationPage() {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Login.module.css";
-import sideImage from "./assets/HOM/login.jpg";
-import logo from "./assets/HOM/logo.png";
+import sideImage from "./assets/Hom/login.jpg";
+import logo from "./assets/Hom/logo.png";
 import axios from "axios";
 
 function Login() {

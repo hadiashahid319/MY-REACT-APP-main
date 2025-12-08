@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Bar.module.css";
-import logo from "./assets/HOM/logo.png";
+import logo from "./assets/Hom/logo.png";
 
 function Bar() {
   const [showSearch, setShowSearch] = useState(false);

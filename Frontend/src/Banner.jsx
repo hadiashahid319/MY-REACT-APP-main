@@ -1,4 +1,4 @@
-import ABOUT from "./assets/HOM/banner.jpg";
+import ABOUT from "./assets/Hom/banner.jpg";
 import styles from "./Banner.module.css"; // ✅ Import CSS Module
 
 function Banner() {

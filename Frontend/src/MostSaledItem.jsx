@@ -1,8 +1,8 @@
 import React from "react";
-import PIC from "./assets/HOM/mirror1.jpg";
-import second from "./assets/HOM/5.jpg";
-import third from "./assets/HOM/vase.jpg";
-import fourth from "./assets/HOM/2.jpg";
+import PIC from "./assets/Hom/mirror1.jpg";
+import second from "./assets/Hom/5.jpg";
+import third from "./assets/Hom/vase.jpg";
+import fourth from "./assets/Hom/2.jpg";
 import styles from "./MostSaledItems.module.css"; 
 import { useNavigate } from "react-router-dom";
 
