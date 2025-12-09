@@ -38,7 +38,7 @@ export default function App() {
   return (
     <BrowserRouter>
       {/* Optional Top Bar */}
-     
+     <Bar/>
    <ItemsProvider>
      <Routes>
         
