@@ -22,7 +22,7 @@ function Landing()
 <>
 <div className="container-fluid">
 
-<Navbar/>
+{/* <Navbar/> */}
 <Banner/>
 <GallerySection/>
 <View/>
